@@ -1,0 +1,27 @@
+@import "./sideNav";
+@import "./langingPage";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-size: 62.5%;
+}
+
+:root {
+  --background-color: #1b1b1b;
+  --background-color-aside: #161616;
+  --accent: #00dfb6;
+  --special: #ba3b46;
+  --text-color: #fafafa;
+  --special-text: #8b8b8b;
+  --background-text: #6a6a6a;
+}
+
+.App {
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
