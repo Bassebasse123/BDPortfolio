@@ -2,6 +2,7 @@ import "../src/styles/app.scss";
 import SideNav from "./components/SideNav.jsx";
 import LandingPage from "./components/LandingPage.jsx";
 import { Routes, Route } from "react-router-dom";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 
       <Routes>
         <Route index path="/BDPortfolio" element={<LandingPage />}></Route>
+        <Route path="/BDPortfolio/contact" element={<ContactPage />}></Route>
       </Routes>
     </div>
   );

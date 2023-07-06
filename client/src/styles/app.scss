@@ -1,5 +1,6 @@
 @import "./sideNav";
 @import "./langingPage";
+@import "./contactPage";
 
 * {
   box-sizing: border-box;
@@ -20,8 +21,10 @@
   --background-text: #6a6a6a;
 }
 
+html {
+  background-color: var(--background-color);
+}
 .App {
-  height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
 }

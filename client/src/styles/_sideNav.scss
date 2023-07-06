@@ -5,6 +5,10 @@ aside {
   bottom: 0;
   background-color: var(--background-color-aside);
 
+  a {
+    text-decoration: none;
+  }
+
   section {
     background-color: black;
     color: var(--special-text);
@@ -52,7 +56,7 @@ aside {
         overflow: hidden;
         transition: 0.5s;
         transform: translateZ(0);
-        color: var(--accent);
+        color: var(--text-color);
         &::before {
           content: "";
           position: absolute;

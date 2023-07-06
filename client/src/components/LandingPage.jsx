@@ -1,30 +1,114 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <main class="allContent">
-      <section class="marginSection">
-        <p class="backgroundHtmlElement">&lt;html&gt;</p>
-        <p class="backgroundHtmlElement">&lt;body&gt;</p>
-        <p class="backgroundHtmlElement">&lt;h1&gt;</p>
-        <h1 class="typewriter">
-          Hi,<br></br>I'm <span className="colorfulLetter">B</span>
-          <span>astian Dammann,</span>
-          <br></br>web developer
-        </h1>
-        <p class="backgroundHtmlElement">&lt;h1&gt;</p>
-        <p class="backgroundHtmlElement">&lt;p&gt;</p>
+    <main className="landingPage">
+      <section className="marginSection">
+        <motion.p
+          initial={{ x: 400, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;html&gt;
+        </motion.p>
+        <motion.p
+          initial={{ x: 800, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;body&gt;
+        </motion.p>
+        <motion.p
+          initial={{ x: 1200, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;h1&gt;
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 100 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          Hi,<br></br>I'm <span className="colorfulLetter">B</span>astian
+          Dammann,
+          <br></br>
+          <span>web developer</span>
+        </motion.h1>
+        <motion.p
+          initial={{ x: 1200, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;/h1&gt;
+        </motion.p>
+        <motion.p
+          initial={{ x: 1200, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;p&gt;
+        </motion.p>
 
-        <p class="headingAddition">
-          React, Javascript / SASS / HTML / Bootstrap / Node / Express
-        </p>
-        <p class="backgroundHtmlElement">&lt;/p&gt;</p>
-        <button class="contactButton">Contact me</button>
+        <motion.p
+          initial={{ x: 1200, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="headingAddition"
+        >
+          React /Javascript / SASS / HTML / Bootstrap / Node / Express
+        </motion.p>
+        <motion.p
+          initial={{ x: 1200, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;/p&gt;
+        </motion.p>
+        <motion.p
+          initial={{ x: 800, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;button&gt;
+        </motion.p>
+
+        <NavLink to={"/BDPortfolio/contact"}>
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 100 }}
+            transition={{ delay: 0.5, duration: 1 }}
+            className="contactButton"
+          >
+            Contact me
+          </motion.button>
+        </NavLink>
+        <motion.p
+          initial={{ x: 800, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;/button&gt;
+        </motion.p>
+        <motion.p
+          initial={{ x: 400, opacity: 0 }}
+          animate={{ x: 0, opacity: 100 }}
+          transition={{ duration: 0.5 }}
+          className="backgroundHtmlElement"
+        >
+          &lt;/html&gt;
+        </motion.p>
       </section>
-
-      <section class="marginSection"></section>
-      <section class="marginSection"></section>
-      <section class="marginSection"></section>
     </main>
   );
 };

@@ -1,24 +1,41 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const SideNav = () => {
   return (
-    <aside>
+    <motion.aside
+      initial={{ y: -1000 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <section>
-        <h2>B</h2>
+        <NavLink to={"/BDPortfolio"}>
+          <h2>B</h2>
+        </NavLink>
         <h3>Bastian</h3>
         <p>Web Developer</p>
       </section>
       <nav>
         <ul>
-          <li>About</li>
-          <li>My Skills</li>
-          <li>Work</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Links</li>
+          <NavLink>
+            <li>About</li>
+          </NavLink>
+          <NavLink>
+            <li>Skills</li>
+          </NavLink>
+          <NavLink>
+            <li>Work</li>
+          </NavLink>
+          <NavLink to={"/BDPortfolio/contact"}>
+            <li>Contact</li>
+          </NavLink>
+          <NavLink>
+            <li>Links</li>
+          </NavLink>
         </ul>
       </nav>
-    </aside>
+    </motion.aside>
   );
 };
 
