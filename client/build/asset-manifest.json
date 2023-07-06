@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BDPortfolio/static/css/main.1fa87b13.css",
+    "main.js": "/BDPortfolio/static/js/main.6296a209.js",
+    "index.html": "/BDPortfolio/index.html",
+    "main.1fa87b13.css.map": "/BDPortfolio/static/css/main.1fa87b13.css.map",
+    "main.6296a209.js.map": "/BDPortfolio/static/js/main.6296a209.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fa87b13.css",
+    "static/js/main.6296a209.js"
+  ]
+}
