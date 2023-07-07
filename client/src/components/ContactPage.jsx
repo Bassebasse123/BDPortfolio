@@ -14,19 +14,25 @@ const ContactPage = () => {
       <form method="POST" action="https://register-demo.freecodecamp.org">
         <fieldset>
           <div class="text-input">
-            <label for="first-name">Enter Your First Name: </label>
+            <label for="first-name">First Name: </label>
             <input id="first-name" name="first-name" type="text" required />
             <span class="separator"> </span>
           </div>
 
           <div class="text-input">
-            <label for="last-name">Enter Your Last Name: </label>
+            <label for="last-name">Last Name: </label>
             <input id="last-name" name="last-name" type="text" required />
             <span class="separator"> </span>
           </div>
 
           <div class="text-input">
-            <label for="email">Enter Your Email:</label>
+            <label for="age">Age (years): </label>
+            <input id="age" type="number" name="age" min="13" max="120" />
+            <span class="separator"> </span>
+          </div>
+
+          <div class="text-input">
+            <label for="email">Email:</label>
             <input id="email" name="email" type="email" required />
             <span class="separator"> </span>
           </div>
@@ -51,7 +57,7 @@ const ContactPage = () => {
               name="account-type"
               class="inline"
             />{" "}
-            Personal Account
+            Personal request
           </label>
           <label for="business-account">
             <input
@@ -60,7 +66,7 @@ const ContactPage = () => {
               name="account-type"
               class="inline"
             />{" "}
-            Business Account
+            Business request
           </label>
           <label for="terms-and-conditions">
             <input
@@ -70,40 +76,33 @@ const ContactPage = () => {
               name="terms-and-conditions"
               class="inline"
             />{" "}
-            I accept the{" "}
-            <a href="https://www.freecodecamp.org/news/terms-of-service/">
-              terms and conditions
-            </a>
+            I accept that my data will be stored, but not shared.
           </label>
         </fieldset>
         <fieldset>
-          <label for="profile-picture">
-            Upload a profile picture:{" "}
-            <input id="profile-picture" type="file" name="file" />
+          <label for="request-file">
+            Upload a file for your request:{" "}
+            <input id="request-file" type="file" name="file" />
           </label>
-
-          <div class="text-input">
-            <label for="age">Input your age (years): </label>
-            <input id="age" type="number" name="age" min="13" max="120" />
-            <span class="separator"> </span>
-          </div>
 
           <div class="text-input">
             <label for="referrer">
               How did you hear about me?
               <select id="referrer" name="referrer">
                 <option value="">choose one</option>
-                <option value="3">Application</option>
+                <option value="1">Application</option>
                 <option value="2">LinkedIn</option>
-                <option value="1">Digital Career Institute</option>
-                <option value="3">Agentur fuer Arbeit</option>
-                <option value="4">Other</option>
+                <option value="3">Digital Career Institute</option>
+                <option value="4">Agentur fuer Arbeit</option>
+                <option value="5">Search Engine</option>
+                <option value="6">Industrial Fair</option>
+                <option value="7">Other</option>
               </select>
             </label>
           </div>
 
           <div class="text-input">
-            <label for="bio">Provide a bio:</label>
+            <label for="bio">What's your request about?</label>
             <textarea
               id="bio"
               name="bio"

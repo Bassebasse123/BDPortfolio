@@ -1,0 +1,80 @@
+.frameCircles {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background: var(--special);
+  color: black;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flexCircles {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  background-color: var(--accent);
+  border-radius: 50%;
+  transform: scale(1);
+  aspect-ratio: 1;
+}
+
+.one {
+  position: relative;
+  width: 150px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.34);
+  animation: growbig 2s infinite alternate;
+}
+
+.two {
+  background-color: white;
+  z-index: 1;
+  width: 100px;
+  box-shadow: 5px 5px 10px 0px rgb(0, 0, 0, 0.5);
+  animation: growmiddle 2s infinite alternate;
+}
+
+.three {
+  z-index: 2;
+  width: 50px;
+  box-shadow: 5px 5px 10px 0px rgb(0, 0, 0, 0.5);
+  animation: growsmall 2s infinite alternate;
+}
+
+@keyframes growbig {
+  0%,
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes growmiddle {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes growsmall {
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

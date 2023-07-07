@@ -1,14 +1,15 @@
 @import "./sideNav";
 @import "./langingPage";
 @import "./contactPage";
+@import "./projectsPage";
+@import "./animations/animatedBurger";
+@import "./animations/animatedCircles";
+@import "./animations/animatedSun";
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-:root {
-  font-size: 62.5%;
 }
 
 :root {
@@ -19,6 +20,7 @@
   --text-color: #fafafa;
   --special-text: #8b8b8b;
   --background-text: #6a6a6a;
+  font-size: 62.5%;
 }
 
 html {

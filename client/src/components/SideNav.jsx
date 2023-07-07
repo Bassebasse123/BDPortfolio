@@ -18,11 +18,11 @@ const SideNav = () => {
       </section>
       <nav>
         <ul>
-          <NavLink>
+          <NavLink to={"/BDPortfolio/about"}>
             <li>About</li>
           </NavLink>
-          <NavLink>
-            <li>Skills</li>
+          <NavLink to={"/BDPortfolio/projects"}>
+            <li>Projects</li>
           </NavLink>
           <NavLink>
             <li>Work</li>

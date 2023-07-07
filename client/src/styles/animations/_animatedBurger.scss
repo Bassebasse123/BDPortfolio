@@ -1,0 +1,58 @@
+button {
+  background: none;
+  border: none;
+}
+
+.bar {
+  width: 200px;
+  height: 20px;
+  background-color: var(--text-color);
+  margin: 4rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(68, 68, 68);
+  transition: 0.5s;
+}
+
+.bartwo {
+  z-index: -1;
+  &::before {
+    font-size: 2.5rem;
+    content: "Hey you!";
+    position: absolute;
+    top: -34px;
+    left: 0;
+    color: var(--accent);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &::after {
+    font-size: 2.5rem;
+    content: "How's it going?";
+    position: absolute;
+    top: 23px;
+    left: 0;
+    color: var(--special);
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+
+button:hover .barone {
+  transform: translateY(6rem) rotate(405deg);
+  background-color: var(--special);
+}
+
+button:hover .bartwo {
+  transform: translatex(-20rem);
+  &::before {
+    opacity: 1;
+  }
+  &::after {
+    opacity: 1;
+  }
+}
+
+button:hover .barthree {
+  transform: translateY(-6rem) rotate(315deg);
+  background-color: var(--accent);
+}
