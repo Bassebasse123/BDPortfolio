@@ -6,6 +6,7 @@ import AnimatedSun from "../animations/AnimatedSun";
 const AnimationContainer = () => {
   return (
     <div>
+      <h1>Animations</h1>
       <div className="miniProjectsFlexContainer">
         <AnimatedBurger></AnimatedBurger>
         <AnimatedCircles></AnimatedCircles>

@@ -108,7 +108,7 @@ const ContactPage = () => {
               name="bio"
               rows="3"
               cols="30"
-              placeholder="I like coding on the beach..."
+              placeholder="..."
             ></textarea>
             <span class="separator"> </span>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../images/2023_07_07_CV_Bastian Dammann.jpg";
+import curriculumVitae from "../images/2023_07_07_CV_Bastian Dammann.jpg";
 
 const AboutPage = () => {
   return (
@@ -13,7 +13,7 @@ const AboutPage = () => {
           bottom: "0",
           left: "200px",
         }}
-        src={pic}
+        src={curriculumVitae}
         alt=""
       />
     </div>

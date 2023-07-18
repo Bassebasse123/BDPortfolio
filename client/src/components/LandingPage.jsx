@@ -1,10 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { ScreenSizeContext } from "../context/screenSizeContext";
+import { useContext } from "react";
 
 const LandingPage = () => {
+  const { screenSize } = useContext(ScreenSizeContext);
+  console.log("logging from navbar", screenSize);
+
   return (
-    <main className="landingPage">
+    <main
+      className="landingPage"
+      style={{
+        left: screenSize.width < 1024 ? "0px" : "200px",
+      }}
+    >
       <section className="marginSection">
         <motion.p
           initial={{ x: 400, opacity: 0 }}
