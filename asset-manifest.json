@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/BDPortfolio/static/css/main.28e5dfe9.css",
-    "main.js": "/BDPortfolio/static/js/main.42989703.js",
-    "static/media/2023_07_07_CV_Bastian Dammann.jpg": "/BDPortfolio/static/media/2023_07_07_CV_Bastian Dammann.c4baa9edf6cdee5aeafb.jpg",
+    "main.css": "/BDPortfolio/static/css/main.aa6b6065.css",
+    "main.js": "/BDPortfolio/static/js/main.78f5fb06.js",
+    "static/media/HS_Collection_Preview.webm": "/BDPortfolio/static/media/HS_Collection_Preview.f99a05cc006e44093e17.webm",
+    "static/media/2023_07_07_CV_Bastian Dammann.jpg": "/BDPortfolio/static/media/2023_07_07_CV_Bastian Dammann.092b7ce114884aa67a9e.jpg",
+    "static/media/Portfolio2022_Preview.jpg": "/BDPortfolio/static/media/Portfolio2022_Preview.6a49b3ade687457fd31d.jpg",
     "index.html": "/BDPortfolio/index.html",
-    "main.28e5dfe9.css.map": "/BDPortfolio/static/css/main.28e5dfe9.css.map",
-    "main.42989703.js.map": "/BDPortfolio/static/js/main.42989703.js.map"
+    "main.aa6b6065.css.map": "/BDPortfolio/static/css/main.aa6b6065.css.map",
+    "main.78f5fb06.js.map": "/BDPortfolio/static/js/main.78f5fb06.js.map"
   },
   "entrypoints": [
-    "static/css/main.28e5dfe9.css",
-    "static/js/main.42989703.js"
+    "static/css/main.aa6b6065.css",
+    "static/js/main.78f5fb06.js"
   ]
 }
